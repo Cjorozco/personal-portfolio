@@ -1,0 +1,60 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Variables de color (para modo oscuro) */
+:root {
+  --primary-color: #333;
+  --secondary-color: #777;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.section {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --primary-color: #eee;
+      --secondary-color: #bbb;
+      --background-color: #333;
+      --text-color: #f9f9f9;
+  }
+}
