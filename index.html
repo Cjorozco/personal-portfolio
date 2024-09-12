@@ -6,13 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Homepage of Frontend Developer Portfolio">
   <meta name="author" content="José Carlos Orozco Medina">
-  <title>Your Portfolio</title>
+  <meta name="keywords" content="Frontend Developer, Portfolio, Web Development">
+  <title>Frontend Developer - Homepage</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://via.placeholder.com/16" type="image/png">
 </head>
 
 <body>
   <header>
-    <img src="your-logo.png" alt="Logo">
+    <a href="index.html">
+      <img src="https://via.placeholder.com/100x50" alt="Logo" id="logo">
+    </a>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -24,8 +28,29 @@
   </header>
 
   <main>
-    <h1>Frontend Developer</h1>
-    <p>HTML only with proper layout, no styling.</p>
+    <section id="introduction">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hi, I'm José Carlos, a passionate Frontend Developer with experience in creating responsive and interactive web applications.</p>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section id="featured-projects">
+      <h2>Featured Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>A brief description of the project. It is built with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>A brief description of the project. It is built with React and Sass.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Three</h3>
+          <p>A brief description of the project. It is built with Vue.js and Tailwind CSS.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>

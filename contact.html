@@ -7,11 +7,14 @@
   <meta name="description" content="Contact Frontend Developer">
   <meta name="author" content="José Carlos Orozco Medina">
   <title>Frontend Developer - Contact</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header>
-    <img src="your-logo.png" alt="Logo">
+    <a href="index.html">
+      <img src="https://via.placeholder.com/100x50" alt="Logo" id="logo">
+    </a>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -23,19 +26,26 @@
   </header>
 
   <main>
-    <h1>Contact Me</h1>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <section id="introduction">
+      <h1>Contact Me</h1>
+      <p>If you have any questions, feel free to reach out by filling out the form below.</p>
+    </section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <!-- Formulario de contacto -->
+    <section id="contact-form">
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="input-field" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="input-field" required>
 
-      <button type="submit">Send Message</button>
-    </form>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" class="input-field" required></textarea>
+
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
